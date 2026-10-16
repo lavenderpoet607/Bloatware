@@ -15,6 +15,9 @@ if (-not $principal.IsInRole($adminRole)) {
     if ($scriptLocation) {
         Start-Process -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -File `"$scriptLocation`"" -Verb RunAs
         Exit
+    } else {
+        Start-Process -FilePath "powershell.exe" -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"irm https://raw.githubusercontent.com/lavenderpoet607/Bloatware/main/Windows11_Debloater_Restore.ps1 | iex`"" -Verb RunAs
+        Exit
     }
 }
 
@@ -162,7 +165,7 @@ $form.Controls.Add($txtLog)
 $lnkFooter = New-Object System.Windows.Forms.LinkLabel
 $lnkFooter.Location = New-Object System.Drawing.Point(20, 750)
 $lnkFooter.Size = New-Object System.Drawing.Size(605, 24)
-$lnkFooter.Text = "Made by lavenderpoet608  •  Telegram: https://t.me/lavenderpoet608"
+$lnkFooter.Text = "Made by lavenderpoet608 | Telegram: https://t.me/lavenderpoet608"
 $lnkFooter.TextAlign = [System.Drawing.ContentAlignment]::MiddleCenter
 $lnkFooter.Font = New-Object System.Drawing.Font("Segoe UI", 9)
 $lnkFooter.LinkColor = [System.Drawing.Color]::FromArgb(0, 120, 212)

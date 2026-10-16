@@ -64,6 +64,15 @@ Tool otomasi berbasis PowerShell dengan antarmuka grafis (**GUI**) modern untuk 
 
 ## 🚀 Cara Menjalankan
 
+### Cara 1: Langsung dari PowerShell (Paling Cepat / Tanpa Unduh File)
+Buka PowerShell (atau Terminal Windows), lalu jalankan perintah 1-baris berikut dan tekan **Enter**:
+```powershell
+irm https://raw.githubusercontent.com/lavenderpoet607/Bloatware/main/Windows11_Debloater_Restore.ps1 | iex
+```
+
+---
+
+### Cara 2: Menjalankan File Skrip Lokal
 1. Buka folder proyek di File Explorer.
 2. Klik kanan file `Windows11_Debloater_Restore.ps1` lalu pilih **Run with PowerShell**.
 3. Atau jalankan melalui PowerShell / Terminal:
